@@ -50,10 +50,181 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	font-size:62.6%;
 }
+
+@firstColor:steelblue;
+@secondColor:pink;
+
+.centerRow(){
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+.centerColumn(){
+	display:flex;
+	flex-direction:column;
+	justify-content: centern;
+
+}
+
+header{
+width:90%;
+height:20vh;
+margin-left:5%;
+margin-right:5%;
+line-height: 5rem;
+background-color: @firstColor;
+.centerRow();
+
+nav{
+	width:40%;
+	font-size:2rem;
+	display: flex;
+	justify-content: space-between;
+	a{
+		color:@secondColor;
+		text-transform: uppercase;
+		text-decoration: none;
+
+	}
+}//end of nav inside header
+
+div{
+	width:40%;
+}
+h1{
+color: @secondColor;
+text-transform: uppercase;
+font-size:5rem;
+
+}//end of header h1
+
+h2{
+
+	font-size:2rem;
+color:white;
+text-transform: uppercase;
+
+}
+
+}//end of header
+
+//start content
+.content{
+
+	.centerRow();
+
+}
+
+ //left content
+  .left-content{
+	text-align: center;
+	  width: 35%;
+	  margin-top: 3%;
+	  height: 100%;
+	  background-color: @secondColor;
+	 
+       
+   .photo{
+	  width:100%;
+	  padding-bottom:5%;
+	  img{
+		  width: 80%;
+		  margin-top: 5%;
+		  margin-left:10%;
+		  margin-right:10%;
+		  
+	  }
+
+   }//end of photo
+
+   .text-content{
+    padding-left:8%;
+	height: 60vh;
+	.centerColumn();
+	justify-content: space-between;
+
+  h2{
+	
+	font-size:3rem;
+	color:@firstColor;
+	text-transform: uppercase;
+    width:80%;
+	border-bottom: 2px solid @firstColor;
+	padding-bottom: 2%;
+    }
+   
+   p{
+	width:80%;
+	   padding-top:2%;
+	   color:@firstColor;
+	   font-size:2rem;
+	   line-height: 2rem;;
+
+   }
+}
+}//end of left-content
+
+#languageList{
+	li{
+		padding-right:15%;
+		color:@firstColor;
+		font-size:2rem;
+	}
+   }
+
+//right content
+
+.right-content{
+	margin-top:5%;
+	margin-left:3%;
+	width: 50%;
+	height: 110vh;
+	line-height: 3rem;
+
+	h2{
+		width:40%;
+		font-size:3.5rem;
+		color:@firstColor;
+		margin-bottom: 3%;
+		background-color: @secondColor;
+	}
+
+	h3{
+		font-size:2.5rem;
+		color:@firstColor;
+		font-weight:bold;
+
+	}
+	P{
+		font-size:2.5rem;
+
+		color:@firstColor;
+	}
+
+     .projectSum{
+        margin-bottom: 5%;
+	 }
+		
+} //end of right-content
+
+//footer
+
+footer{
+	background-color: steelblue;
+    width:90%;
+	height:3vh;
+	margin-top:5%;
+	margin-left:5%;
+    margin-right:5%;
+  }
 
