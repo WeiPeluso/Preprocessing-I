@@ -84,12 +84,27 @@ margin-right:5%;
 line-height: 5rem;
 background-color: @firstColor;
 .centerRow();
+@media(max-width:800px){
+	height:25vh
+}
 
+@media(max-width:500px){
+	border:2px black solid;
+	
+	height:50vh;
+	.centerColumn();
+}
 nav{
 	width:40%;
 	font-size:2rem;
 	display: flex;
 	justify-content: space-between;
+
+	@media(max-width:800px){
+		padding-left:10%;
+		.centerColumn();
+	}
+
 	a{
 		color:@secondColor;
 		text-transform: uppercase;
@@ -106,13 +121,33 @@ color: @secondColor;
 text-transform: uppercase;
 font-size:5rem;
 
+@media(max-width:800px){
+	padding-top:5%;
+    font-size: 4rem;
+}
+
+@media(max-width:500px){
+	padding-top:0;
+    font-size: 2.5rem;
+}
+
+
 }//end of header h1
 
 h2{
 
 	font-size:2rem;
-color:white;
+   color:white;
 text-transform: uppercase;
+
+@media(max-width:800px){
+  font-size: 1.5rem;
+}
+
+@media(max-width:500px){
+	width:25rem;
+    font-size: 1.5rem;
+}
 
 }
 
@@ -123,17 +158,32 @@ text-transform: uppercase;
 
 	.centerRow();
 
+	@media(max-width:500px){
+		.centerColumn();
+	}
+	height:180vh;
+
 }
 
  //left content
   .left-content{
+	
 	text-align: center;
-	  width: 35%;
-	  margin-top: 3%;
-	  height: 100%;
-	  background-color: @secondColor;
+	width: 35%;
+	margin-top: 3%;
+	height: 100%;
+	background-color: @secondColor;
 	 
-       
+	@media(max-width:800px){
+		margin-top:-23%;
+	}
+	   
+	@media(max-width:500px){
+		margin-top:5%;
+		width:100%
+	}
+	   
+
    .photo{
 	  width:100%;
 	  padding-bottom:5%;
@@ -161,6 +211,11 @@ text-transform: uppercase;
     width:80%;
 	border-bottom: 2px solid @firstColor;
 	padding-bottom: 2%;
+
+	@media(max-width:800px){
+		font-size:2rem;
+	}
+
     }
    
    p{
@@ -176,6 +231,7 @@ text-transform: uppercase;
 
 #languageList{
 	li{
+		padding-top:1%;
 		padding-right:15%;
 		color:@firstColor;
 		font-size:2rem;
@@ -185,24 +241,55 @@ text-transform: uppercase;
 //right content
 
 .right-content{
-	margin-top:5%;
+	margin-top: 3%;
 	margin-left:3%;
 	width: 50%;
-	height: 110vh;
+	height: 112vh;
 	line-height: 3rem;
+
+	@media(max-width:800px){
+		margin-top:2%;
+	}
+
+	@media(max-width:500px){
+		margin-top: 5%;
+		margin-left:0;
+		width:100%;
+		background-color: @secondColor;
+	}
 
 	h2{
 		width:40%;
 		font-size:3.5rem;
 		color:@firstColor;
 		margin-bottom: 3%;
+		text-transform: capitalize;
 		background-color: @secondColor;
+
+		@media(max-width:800px){
+			width:70%;
+			font-size:2.5rem;
+		}
+
+		@media(max-width:500px){
+			margin-top: 10%;
+			margin-left:0;
+			width:50%;
+			background-color:@firstColor;
+			color:@secondColor;
+		}
 	}
 
 	h3{
 		font-size:2.5rem;
 		color:@firstColor;
 		font-weight:bold;
+		text-transform: capitalize;
+
+		@media(max-width:800px){
+
+			font-size:2rem;
+		}
 
 	}
 	P{
@@ -223,8 +310,12 @@ footer{
 	background-color: steelblue;
     width:90%;
 	height:3vh;
-	margin-top:5%;
+	margin-top:2%;
 	margin-left:5%;
-    margin-right:5%;
+	margin-right:5%;
+	
   }
 
+
+
+  
