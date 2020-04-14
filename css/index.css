@@ -221,13 +221,13 @@ header h2 {
   justify-content: center;
   align-items: center;
   align-content: center;
-  height: 180vh;
 }
 @media (max-width: 500px) {
   .content {
     display: flex;
     flex-direction: column;
     justify-content: centern;
+    height: 180vh;
   }
 }
 .left-content {
